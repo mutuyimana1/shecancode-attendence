@@ -1,8 +1,13 @@
 import React from "react";
+import HomeLAyout from "../components/HomeLayout";
 
 const Home = () =>{
   return (
-    <h1>Welcome to attendance</h1>
+    <HomeLAyout>
+       <h1>Welcome to attendance</h1>
+
+    </HomeLAyout>
+   
   )
 }
 export default Home;
