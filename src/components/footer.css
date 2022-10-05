@@ -29,14 +29,17 @@
 ul li{
   list-style: none;
   text-decoration: none;
+  margin-bottom: 2rem;
   
 }
 .contact-info ul li{
   list-style-type: none;
+  margin-bottom: 3rem;
 }
 ul li a {
   text-decoration: none;
   color: #28ABE2;
+
 
 }
 

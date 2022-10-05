@@ -5,6 +5,10 @@ import icon2 from "../assets/twitter.webp";
 import icon3 from "../assets/youtu.png";
 import icon4 from "../assets/linked.png";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import { faPhone} from "@fortawesome/free-solid-svg-icons";
+
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./footer.css";
 
@@ -43,14 +47,10 @@ const Footer = () => {
             <div className="contact-info col-4  col-sm-12 col-md-6 col-lg-4 mb-4">
             <h1 className="mb-5">Contact Info</h1>
             <ul>
-              <li><FontAwesomeIcon icon={faHome} style={{ fontSize: "16px" }} /> Kacyiru, KG Av,Kigali-Rwanda</li>
-              <li><FontAwesomeIcon icon={faHome} style={{ fontSize: "16px" }} /> Info@Igire.rw </li>
-              <li><FontAwesomeIcon icon={faHome} style={{ fontSize: "16px" }} /> +250786774605</li>
-            </ul>
-           
-           
-
-             
+              <li><FontAwesomeIcon icon={faHome} style={{ fontSize: "16px" }} className ="px-3"  /> Kacyiru, KG Av,Kigali-Rwanda</li>
+              <li><FontAwesomeIcon icon={faEnvelope} style={{ fontSize: "16px" }} className ="px-3" /> Info@Igire.rw </li>
+              <li><FontAwesomeIcon icon={faPhone} style={{ fontSize: "16px" }} className ="px-3" /> +250786774605</li>
+            </ul>  
              </div>
           </div>
         </div>
