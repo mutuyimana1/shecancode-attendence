@@ -20,18 +20,13 @@
  .text1{
      position: absolute;
      bottom: 40rem;
-     right: 32rem;
- }
- .text2{
-    position: absolute;
-    bottom: 37rem;
-    right: 40rem;
-   
+     right: 17rem;
+     font-size: 5rem;
  }
  .text3{
     position: absolute;
     bottom: 29rem;
-    right: 38rem;
+    right: 35rem;
     font-size: 2rem;
  }
  
@@ -45,20 +40,19 @@
  .button1{
     position: absolute;
     background-color: white;
-    width: 11%;
-    height: 2.5rem;
-    bottom: 25rem;
+    width: 12%;
+    height: 4rem;
+    bottom: 22rem;
     right: 53rem;
     text-align: center;
     border-radius: 5rem;
-    font-size: larger;
-    font-weight: 600;
+    font-size: 1.5rem;
     cursor: pointer;
-    padding: .2rem;
+    padding: .5rem;
     
  }
  .button1:hover {
-    background-color: rgb(15, 155, 211);
+    background-color: rgb(196, 237, 252);
  }
  .button1 a {
     color: black;
@@ -67,19 +61,19 @@
  .button2{
     position: absolute;
     background-color: white;
-    width: 11%;
-    height: 2.5rem;
-    bottom: 25rem;
+    width: 12%;
+    height: 4rem;
+    bottom: 22rem;
     right: 30rem;
     text-align: center;
     border-radius: 3rem;
-    font-size: larger;
+    font-size: 1.5rem;
     cursor: pointer;
-    font-weight: 600;
-    padding: .2rem;
+    padding: .5rem;
+    
  }
  .button2:hover {
-    background-color: rgb(15, 155, 211);
+    background-color:  rgb(196, 237, 252);
  }
  .button2 a {
     color: black;
@@ -99,21 +93,20 @@
  .PermissionButton {
     position: absolute;
     background-color: white;
-    width: 11%;
-    height: 2.5rem;
+    width: 12%;
+    height: 4rem;
     /* top: 5rem; */
     left: 25rem;
     text-align: center;
     border-radius: 3rem;
-    font-size: larger;
+    font-size: 1.5rem;
     cursor: pointer;
-    font-weight: 600;
-    padding: .2rem;
+    padding: .5rem;
     margin-top: 1rem;
  }
- .PermissionButton:hover {
-    background-color: rgb(15, 155, 211);
- }
+ /* .PermissionButton:hover {
+    background-color:  rgb(196, 237, 252);
+ } */
  .PermissionButton a {
     color: black;
     text-decoration: none;
@@ -169,6 +162,14 @@
      border: #ffff .7rem solid;
      object-fit: cover;
  }
+ /* .PermissionCard{
+    width: 25%;
+    height: 50vh;
+    background-color: white;
+    margin-left: 15rem;
+    margin-bottom: 2rem;
+    padding: 5rem;
+ } */
  .bodyImage3{
     height: 80vh;
     display: flex;
@@ -199,20 +200,20 @@
  .CheckStatusButton{
     position: absolute;
     background-color: white;
-    width: 11%;
-    height: 3rem;
+    width: 12%;
+    height: 4rem;
     left: 25rem;
     text-align: center;
     border-radius: 3rem;
-    font-size: larger;
+    font-size: 1.5rem;
     cursor: pointer;
-    font-weight: 600;
     /* padding: .2rem; */
     margin-top: 28rem;
+    padding: .5rem;
  }
- .CheckStatusButton:hover {
+ /* .CheckStatusButton:hover {
     background-color: var(--main-color);
- }
+ } */
  .CheckStatusButton a {
     color: black;
     text-decoration: none;
