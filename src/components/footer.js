@@ -34,13 +34,7 @@ const Footer = () => {
                   <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="#">Sign In</a>
-                </li>
-                <li>
                   <a href="#">Contact us</a>
-                </li>
-                <li>
-                  <a href="#">Logout</a>
                 </li>
               </ul>
             </div>
