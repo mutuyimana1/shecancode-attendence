@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../assets/logos1.png";
-import icon1 from "../assets/facebook.webp";
-import icon2 from "../assets/twitter.webp";
-import icon3 from "../assets/youtu.png";
-import icon4 from "../assets/linked.png";
+// import logo from "../assets/logos1.png";
+// import icon1 from "../assets/facebook.webp";
+// import icon2 from "../assets/twitter.webp";
+// import icon3 from "../assets/youtu.png";
+// import icon4 from "../assets/linked.png";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./footer.css";
@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="container-fluid container-fluid-footer">
           <div className="row footer-container-part1">
             <div className="footer-left  col-4 col-sm-12 col-md-6 col-lg-4 mb-4 ">
-              <img src={logo} alt="logo" className="logo-footer" />
+              <img src="https://res.cloudinary.com/dggvxdkri/image/upload/v1665065641/samples/Attendance%20pict/logos1_v3xdrc.png" alt="logo" className="logo-footer" />
               <p className="text-white">
                 SheCanCode is on a mission to close the tech gender gap, by
                 inspiring more women to enter, remain and excel in the tech
@@ -64,16 +64,16 @@ const Footer = () => {
           </div>
           <div className="footer-right">
             <a href="#" className="footer-right-link">
-              <img src={icon1} className="contact-us-icon1" />
+              <img src="https://res.cloudinary.com/dggvxdkri/image/upload/v1665065577/samples/Attendance%20pict/facebook_anoplp.webp" className="contact-us-icon1" />
             </a>
             <a href="#" className="footer-right-link">
-              <img src={icon2} className="contact-us-icon" />
+              <img src="https://res.cloudinary.com/dggvxdkri/image/upload/v1665065745/samples/Attendance%20pict/twitter_e7umxz.webp"  className="contact-us-icon" />
             </a>
             <a href="#" className="footer-right-link">
-              <img src={icon3} className="contact-us-icon" />
+              <img src="https://res.cloudinary.com/dggvxdkri/image/upload/v1665406929/samples/Attendance%20pict/you_e33pwf.png" className="contact-us-icon" />
             </a>
             <a href="#" className="footer-right-link">
-              <img src={icon4} className="contact-us-icon" />
+              <img src="https://res.cloudinary.com/dggvxdkri/image/upload/v1665065626/samples/Attendance%20pict/linked_fipqgy.png" className="contact-us-icon" />
             </a>
           </div>
         </div>

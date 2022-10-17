@@ -1,3 +1,7 @@
+*{
+   margin:0;
+   padding: 0;;
+ } 
 :root{
     --main-color: rgba(18, 135, 177, 0.3);
  }
@@ -66,7 +70,7 @@
     bottom: 22rem;
     right: 30rem;
     text-align: center;
-    border-radius: 3rem;
+    border-radius: 5rem;
     font-size: 1.5rem;
     cursor: pointer;
     padding: .5rem;
@@ -95,18 +99,17 @@
     background-color: white;
     width: 12%;
     height: 4rem;
-    /* top: 5rem; */
     left: 25rem;
     text-align: center;
-    border-radius: 3rem;
+    border-radius: 5rem;
     font-size: 1.5rem;
     cursor: pointer;
     padding: .5rem;
     margin-top: 1rem;
+
+    
  }
- /* .PermissionButton:hover {
-    background-color:  rgb(196, 237, 252);
- } */
+
  .PermissionButton a {
     color: black;
     text-decoration: none;
@@ -179,38 +182,51 @@
  
  .bodyImage3 p {
     font-size: 2rem;
-    padding-top: 10rem;
-    margin-left: 25rem;
+    padding-top: 2rem;
+    padding-left: 25rem;
  }
  .statusImage{
-    background-image: url(https://res.cloudinary.com/dggvxdkri/image/upload/v1665086847/samples/Attendance%20pict/online-time-and-attendance-removebg-preview_ysma94.png);
+    /* background-image: url(https://res.cloudinary.com/dggvxdkri/video/upload/v1665433858/samples/Attendance%20pict/stock-footage-metaverse-business-meeting-conference-finance-business-stock-exchange-crypto-blockchain-data_eb0jzh.webm); */
     position: absolute;
-     width: 50rem;
-     height: 32rem;
-     left: 80rem;
-     top: 160rem;
+     left: 60rem;
+     top: 140rem;
      background-size: 100%;
      background-repeat:no-repeat;
-     border-radius: 10%;
-     background-color: white;
+     /* border-radius: 10%; */
+     /* background-color: white; */
      padding: 10rem;
      object-fit: cover;
  
  }
- .CheckStatusButton{
+  /* .CheckStatusButton{
     position: absolute;
     background-color: white;
     width: 12%;
     height: 4rem;
     left: 25rem;
+    bottom: 1rem;
     text-align: center;
     border-radius: 3rem;
     font-size: 1.5rem;
     cursor: pointer;
-    /* padding: .2rem; */
-    margin-top: 28rem;
+    padding-top: 5rem;
     padding: .5rem;
- }
+ }  */
+.CheckStatusButton{    
+    position: absolute;
+    background-color: white;
+    width: 12%;
+    height: 4rem;
+    left: 25rem;
+    /* bottom: 50rem; */
+    top: 172rem;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: .5rem;
+    padding-top: .2rem;
+}
  /* .CheckStatusButton:hover {
     background-color: var(--main-color);
  } */
@@ -219,6 +235,64 @@
     text-decoration: none;
     font-size: 1.5rem;
  }
- .statusImage{
- 
- }
+ @media (max-width:1440px){
+   html{
+      font-size: 62.5%;
+   }
+
+   .homeContainer{
+      background-color:var(--main-color);
+      overflow: hidden;
+   
+   }
+   .button1{
+      position: absolute;
+      background-color: white;
+      width: 12%;
+      height: 4rem;
+      bottom: 22rem;
+      right: 53rem;
+      text-align: center;
+      border-radius: 5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: .5rem;
+      
+   }
+   .text1{
+      position: absolute;
+      bottom: 40rem;
+      right: 17rem;
+      font-size: 2rem;
+      text-decoration: aqua;
+  }
+  .text3{
+     position: absolute;
+     bottom: 29rem;
+     right: 35rem;
+     font-size: .5rem;
+  }
+  
+  .bodytext{
+      color: white;
+      font-size: 10rem;
+      padding-top: 40rem;
+      padding-left: 60rem;
+  
+  }
+  .button1{
+     position: absolute;
+     background-color: white;
+     width: 12%;
+     height: 4rem;
+     bottom: 22rem;
+     right: 53rem;
+     text-align: center;
+     border-radius: 5rem;
+     font-size: 1.5rem;
+     cursor: pointer;
+     padding: .5rem;
+     
+  }
+   
+} 
