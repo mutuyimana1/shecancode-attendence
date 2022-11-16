@@ -1,0 +1,16 @@
+[
+{
+    "MentorFirtstName": "Benjamin",
+    "MentorSecondName":"Yamuremye",
+    "email":"yamu@gmail.com",
+    "telephone":"0785627690",
+    "program":"Fullstack dev"
+},
+{
+    "MentorFirtstName": "Cynthia",
+    "MentorSecondName":"Kayitare",
+    "email":"kay@gmail.com",
+    "telephone":"0785627690",
+    "program":"Frontend"
+}
+]

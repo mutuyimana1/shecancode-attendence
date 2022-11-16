@@ -1,13 +1,15 @@
 import React from "react";
 import "./home.css"
 import timeSchedule from "../assets/image/timeSchedule.jpeg"
-// import HomeLAyout from "../components/HomeLayout";
+import HomeLAyout from "../components/HomeLayout";
+
 
 
 const Home = () =>{
   return (
-    // <HomeLAyout>
+    <HomeLAyout>
        <div className="homeContainer">
+       
           <div className="bodyImage1" >
             <img src= {timeSchedule} alt="" style={{width:1750,height:695,opacity:0.5,objectFit:"cover"}} />
            <div className="bodytext">
@@ -22,7 +24,7 @@ const Home = () =>{
             <a href="/"> View Status </a>
            </div>
            <div className="button2">
-            <a href="/"> Request for Attendance</a>
+            <a href="/"> Ask Attendance</a>
            </div>
            
           </div>
@@ -50,13 +52,19 @@ const Home = () =>{
                <a href="/"> Check Status </a>
                 </div>
               <div className="statusImage">
-                
+                <video  autoPlay loop muted><source src="https://res.cloudinary.com/dggvxdkri/video/upload/v1665433858/samples/Attendance%20pict/stock-footage-metaverse-business-meeting-conference-finance-business-stock-exchange-crypto-blockchain-data_eb0jzh.webm" 
+              style={{width:"700",height:"400"}}
+               />
+              
+              </video>
               </div>
          </div>
+
+
   
        </div>
 
-    // </HomeLAyout>
+    </HomeLAyout>
    
   )
 }
