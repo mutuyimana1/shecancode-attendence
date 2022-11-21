@@ -5,8 +5,11 @@ import HomeLAyout from "../components/HomeLayout";
 
 
 
+
 const Home = () =>{
   return (
+    <>
+   
     <HomeLAyout>
        <div className="homeContainer">
        
@@ -65,7 +68,7 @@ const Home = () =>{
        </div>
 
     </HomeLAyout>
-   
+    </>
   )
 }
 export default Home;
