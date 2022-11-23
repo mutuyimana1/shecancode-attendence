@@ -19,7 +19,7 @@ const Index = () =>{
       <Route path= "/Dashboard" element = {<View/>} />
       <Route path= "/signin" element = {<Signin/>} />
       {/* <Route path="/addstudent" element={<AddStudent/>}/> */}
-      <Route path="/admindashboard" element={<AdminDashboard/>}/>
+      <Route path="/dashboard" element={<AdminDashboard/>}/>
 
     </Routes>
     
