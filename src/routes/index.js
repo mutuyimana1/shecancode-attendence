@@ -7,6 +7,8 @@ import View from "../views/Dashboard/DashLayout";
 import Signin from "../components/Forms/Signin";
 import AdminDashboard from "../views/Dashboard/AdminDashboard";
 import Statistics from "../components/Statistics";
+import Redux from "../components/redux/actionType";
+import ReduxCounter from "../components/redux/ReduxCounter";
 
 
 
@@ -25,6 +27,7 @@ const Index = () =>{
       <Route path="/dashboard" element={<AdminDashboard/>}>
       <Route path="" element={<Statistics />} />
         <Route path="students" element={<Signin />} />
+      <Route path ="counter" element={<ReduxCounter/>}/>
       </Route>
 
     </Routes>
