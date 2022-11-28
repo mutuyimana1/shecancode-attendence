@@ -15,6 +15,7 @@ import HomePage from "../components/HomePage/HomePage"
 
 import StudentForm from "../views/Dashboard/StudentForm";
 
+import StudentStatus from "../components/StudentStatus";
 
 
 
@@ -23,7 +24,7 @@ import StudentForm from "../views/Dashboard/StudentForm";
 const Index = () => {
   return (
     <>
-   
+
 
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -38,16 +39,19 @@ const Index = () => {
           <Route path="mentors" element={<Mentors />} />
           <Route path="StudentForm" element={<StudentForm />} />
           <Route path="" element={<Statistics />} />
-          <Route path="Addmentor" element={<Addmentor/>}/>
+          <Route path="Addmentor" element={<Addmentor />} />
+          <Route path="mentors" element={<Mentors />} />
+
+          <Route path="view" element={<StudentStatus />} />
 
         </Route>
 
 
       </Routes>
 
-    
-    
-    
+
+
+
     </>
   )
 }
