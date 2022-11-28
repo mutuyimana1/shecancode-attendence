@@ -6,11 +6,11 @@ const Mentors = () => {
  
 <div class="md:px-32 py-8 w-full">
   <div class="shadow overflow-hidden rounded border-b border-gray-200">
-    <button class="bg-green-200 py-3 px-4">Add Mentor</button>
-    <table class="min-w-full bg-white">
+    <button class="bg-gray-800 py-3 px-4 text-white  float-right ... ">Add Mentor</button>
+    <table class="min-w-full bg-white mt-20">
       <thead class="bg-gray-800 text-white">
         <tr>
-          <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">First name</th>
+          <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm flex space-x-4 ...">First name</th>
           <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Last name</th>
           <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Phone</th>
           <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Email</th>
