@@ -20,26 +20,26 @@ const Mentors = () => {
       <tr>
         <td class="w-1/3 text-left py-3 px-4">Aline</td>
         <td class="w-1/3 text-left py-3 px-4">Smith</td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">honorineuwituze896@gmail.com</a></td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500 no-underline" href="tel:622322662">622322662</a></td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500 no-underline" href="mailto:jonsmith@mail.com">honorineuwituze896@gmail.com</a></td>
       </tr>
       <tr class="bg-gray-100">
         <td class="w-1/3 text-left py-3 px-4">Emma</td>
         <td class="w-1/3 text-left py-3 px-4">Johnson</td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@gmail.com</a></td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500 no-underline" href="tel:622322662">622322662</a></td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500 no-underline" href="mailto:jonsmith@mail.com">jonsmith@gmail.com</a></td>
       </tr>
       <tr>
         <td class="w-1/3 text-left py-3 px-4">Oliver</td>
         <td class="w-1/3 text-left py-3 px-4">Williams</td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@gmail.com</a></td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500 no-underline" href="tel:622322662">622322662</a></td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500 no-underline" href="mailto:jonsmith@mail.com">jonsmith@gmail.com</a></td>
       </tr>
       <tr class="bg-gray-100">
         <td class="w-1/3 text-left py-3 px-4">Isabella</td>
         <td class="w-1/3 text-left py-3 px-4">Brown</td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@gmail.com</a></td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500 no-underline" href="tel:622322662">622322662</a></td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500 no-underline" href="mailto:jonsmith@mail.com">jonsmith@gmail.com</a></td>
       </tr>
     </tbody>
     </table>
