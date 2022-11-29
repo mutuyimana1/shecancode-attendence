@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Mentors = () => {
   return (
@@ -6,7 +7,8 @@ const Mentors = () => {
  
 <div class="md:px-32 py-8 w-full">
   <div class="shadow overflow-hidden rounded border-b border-gray-200">
-    <button class="bg-gray-800 py-3 px-4 text-white  float-right ... ">Add Mentor</button>
+  
+   <Link to="/dashboard/Addmentor"><button class="bg-gray-800 py-3 px-4 text-white  float-right ... ">Add Mentor</button></Link>  
     <table class="min-w-full bg-white mt-20">
       <thead class="bg-gray-800 text-white">
         <tr>
