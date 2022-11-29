@@ -1,16 +1,24 @@
 import React from "react"
+import {useForm} from "react-hook-form";
 
 
 
 function Addmentor() {
+    
+    const  { register,handleSubmit,formState: { errors }
+      } = useForm();
+      const onSubmit = (data) => {
+        console.log(JSON.stringify(data));
+         };
   return (
+
     <>
     
 <div className="flex items-center justify-center p-12">
  
  
   <div className="mx-auto w-full max-w-[550px]">
-    <form action="https://formbold.com/s/FORM_ID" method="POST">
+    <form action="https://formbold.com/s/FORM_ID" onSubmit={handleSubmit(onSubmit)} method="POST">
       <div className="-mx-3 flex flex-wrap">
         <div className="w-full px-3 sm:w-1/2">
           <div className="mb-5">
@@ -26,8 +34,10 @@ function Addmentor() {
               id="fName"
               placeholder="First Name"
               className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-            required/>
+               {...register("fName", { required: "First Name is required" })} />
           </div>
+          {errors.fName && <p className="text-red-700" role="alert">{errors.fName?.message}</p>}
+          
         </div>
         <div className="w-full px-3 sm:w-1/2">
           <div className="mb-5">
@@ -43,14 +53,16 @@ function Addmentor() {
               id="lName"
               placeholder="Last Name"
               className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-            required/>
+              {...register("lName", { required: "Last Name is required" })}
+               />
           </div>
+          {errors.lName && <p className="text-red-700" role="alert">{errors.lName?.message}</p>}
         </div>
       </div>
       <div className="mb-5">
         <label
           for="phone"
-          className="mb-3 block text-base font-medium text-[#07074D]" required
+          className="mb-3 block text-base font-medium text-[#07074D]" 
         >
           phone
         </label>
@@ -59,10 +71,12 @@ function Addmentor() {
           name="phone"
           id="phone"
           placeholder="+250"
-          min="0"
+         
           className="w-full appearance-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-        required/>
+          {...register("phone", { required: "Phone is required" })}
+        />
       </div>
+      {errors.phone && <p className="text-red-700" role="alert">{errors.phone?.message}</p>}
 
       <div className="-mx-3 flex flex-wrap">
         <div className="w-full px-3 sm:w-1/2">
@@ -78,8 +92,11 @@ function Addmentor() {
               name="email"
               id="email"
               className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md required"
-            required/>
+              {...register("email", { required: "Email is required" })}
+               />
           </div>
+          {errors.email && <p className="text-red-700" role="alert">{errors.email?.message}</p>}
+
         </div>
         
       </div>
@@ -87,7 +104,7 @@ function Addmentor() {
       
 
       <div>
-        <button className=" rounded-md bg-gray-800 py-3 px-8 text-center text-base font-semibold text-white outline-none"
+        <button type="submit" className=" rounded-md bg-gray-800 py-3 px-8 text-center text-base font-semibold text-white outline-none"
         >
           Savementor
         </button>
