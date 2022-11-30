@@ -10,14 +10,36 @@ import Statistics from "../components/Statistics";
 import Redux from "../components/redux/actionType";
 import ReduxCounter from "../components/redux/ReduxCounter";
 import Mentors from "../components/Mentors";
+import SuperAdmin from "../views/Dashboard/SuperAdmin";
+import StudentForm from "../views/Dashboard/StudentForm";
+import Addmentor from "../components/Addmentor";
 
 
 
 
 
-const Index = () =>{
-  return(
+const Index = () => {
+  return (
     <>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="home" element={<Home />} />
+        {/* <Route path= "/Dashboard" element = {<View/>} /> */}
+        <Route path="/signin" element={<Signin />} />
+        {/* <Route path="/addstudent" element={<AddStudent/>}/> */}
+        <Route path="/dashboard" element={<AdminDashboard />}>
+          <Route path="" element={<Statistics />} />
+          <Route path="students" element={<SuperAdmin />} />
+          <Route path="counter" element={<ReduxCounter />} />
+          <Route path="mentors" element={<Mentors />} />
+          <Route path="StudentForm" element={<StudentForm />} />
+
+        </Route>
+
+
+      </Routes>
+
     
     <Routes>
       <Route path= "/" element = {<Home/>} />
@@ -27,10 +49,14 @@ const Index = () =>{
       {/* <Route path="/addstudent" element={<AddStudent/>}/> */}
       <Route path="/dashboard" element={<AdminDashboard/>}>
       <Route path="" element={<Statistics />} />
-        <Route path="students" element={<Signin />} />
+        <Route path="students" element={<SuperAdmin/>} />
       <Route path ="counter" element={<ReduxCounter/>}/>
+      
       <Route path="mentors" element={<Mentors/>}/>
+      <Route path="Addmentor" element={<Addmentor/>}/>
+ 
       </Route>
+
 
     </Routes>
     
