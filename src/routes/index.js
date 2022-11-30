@@ -11,11 +11,8 @@ import Redux from "../components/redux/actionType";
 import ReduxCounter from "../components/redux/ReduxCounter";
 import Mentors from "../components/Mentors";
 import SuperAdmin from "../views/Dashboard/SuperAdmin";
-<<<<<<< HEAD
 import StudentForm from "../views/Dashboard/StudentForm";
-=======
 import Addmentor from "../components/Addmentor";
->>>>>>> 1a77d441a0fe96b99beee415cc2b7e4728baac9c
 
 
 
@@ -24,7 +21,6 @@ import Addmentor from "../components/Addmentor";
 const Index = () => {
   return (
     <>
-<<<<<<< HEAD
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -44,7 +40,6 @@ const Index = () => {
 
       </Routes>
 
-=======
     
     <Routes>
       <Route path= "/" element = {<Home/>} />
@@ -65,7 +60,6 @@ const Index = () => {
 
     </Routes>
     
->>>>>>> 1a77d441a0fe96b99beee415cc2b7e4728baac9c
     </>
   )
 }
