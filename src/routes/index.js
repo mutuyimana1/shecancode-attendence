@@ -16,6 +16,7 @@ import HomePage from "../components/HomePage/HomePage"
 import StudentForm from "../views/Dashboard/StudentForm";
 
 import StudentStatus from "../components/StudentStatus";
+import TakeAttendance from "../components/TakeAttendance";
 
 
 
@@ -43,6 +44,7 @@ const Index = () => {
           <Route path="mentors" element={<Mentors />} />
 
           <Route path="view" element={<StudentStatus />} />
+          <Route path="TakeAttendance" element={<TakeAttendance/>}></Route>
 
         </Route>
 
