@@ -17,6 +17,8 @@ import StudentForm from "../views/Dashboard/StudentForm";
 
 import StudentStatus from "../components/StudentStatus";
 import TakeAttendance from "../components/TakeAttendance";
+import Permission from "../components/Permissions";
+import HomePage from "../components/HomePage/HomePage";
 
 
 
@@ -25,6 +27,7 @@ import TakeAttendance from "../components/TakeAttendance";
 const Index = () => {
   return (
     <>
+   
 
 
       <Routes>
@@ -45,6 +48,7 @@ const Index = () => {
 
           <Route path="view" element={<StudentStatus />} />
           <Route path="TakeAttendance" element={<TakeAttendance/>}></Route>
+          <Route path="Permissions" element={<Permission/>} ></Route>
 
         </Route>
 

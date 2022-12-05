@@ -72,6 +72,26 @@ const AdminDashboard = () => {
               </Link>
               
             </li>
+            <li className='pt-6'>
+              <Link to="/dashboard/Permission" className=" relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                <span className="inline-flex justify-center items-center ml-4">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                </span>
+                <span className="ml-2 text-2xl tracking-wide truncate">Permissions</span>
+              </Link>
+              
+            </li>
+            <li className='pt-6'>
+              <Link to="/" className=" relative flex flex-row items-center h-11 focus:outline-none hover:bg-blue-800 dark:hover:bg-gray-600 text-white-600 hover:text-white-800 border-l-4 border-transparent hover:border-blue-500 dark:hover:border-gray-800 pr-6">
+                <span className="inline-flex justify-center items-center ml-4">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style></style></defs><title/><g id="logout"><line class="cls-1" x1="15.92" x2="28.92" y1="16" y2="16"/><path d="M23.93,25v3h-16V4h16V7h2V3a1,1,0,0,0-1-1h-18a1,1,0,0,0-1,1V29a1,1,0,0,0,1,1h18a1,1,0,0,0,1-1V25Z"/><line class="cls-1" x1="28.92" x2="24.92" y1="16" y2="20"/><line class="cls-1" x1="28.92" x2="24.92" y1="16" y2="12"/><line class="cls-1" x1="24.92" x2="24.92" y1="8.09" y2="6.09"/><line class="cls-1" x1="24.92" x2="24.92" y1="26" y2="24"/></g></svg>
+                </span>
+                <span className="ml-2 text-2xl tracking-wide truncate">Logout</span>
+              </Link>
+              
+            </li>
+            
+            
           </ul>
           <p className="mb-14 px-5 py-3 hidden md:block text-center text-xl">Copyright @2022</p>
         </div>
