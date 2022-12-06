@@ -6,20 +6,6 @@ import FooterB from './FooterB'
 function Home() {
   return (
     <>
-<<<<<<< HEAD
-       
-       <Navbar/>
-       
-             
-      
-       <div className='mt-50'>
-          <div className="body-Image" >
-          
-            <img src="https://res.cloudinary.com/dggvxdkri/image/upload/v1665065736/samples/Attendance%20pict/timeSchedule_l0bkbl.jpg"
-             alt="" style={{width:1350,height:695,objectFit:"cover"}}></img>
-           </div>
-           </div>
-=======
 
        <Navbar/>
 
@@ -51,23 +37,14 @@ function Home() {
   </main>
 
 
->>>>>>> 2339909 (new work done)
 
 
-           <div className='box3 bg-gray-900' style={{width:1350,height:200}}>
+           <div className='box3 bg-gray-900' style={{height:100}}>
             <FooterB/>
            </div>
-<<<<<<< HEAD
   
-=======
-
->>>>>>> 2339909 (new work done)
     </>
   )
 }
 
-<<<<<<< HEAD
 export default Home
-=======
-export default Home
->>>>>>> 2339909 (new work done)

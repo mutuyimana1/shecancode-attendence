@@ -11,7 +11,6 @@ import ReduxCounter from "../components/redux/ReduxCounter";
 import Mentors from "../components/Mentors";
 import SuperAdmin from "../views/Dashboard/SuperAdmin";
 import Addmentor from "../components/Addmentor";
-import HomePage from "../components/HomePage/HomePage"
 
 import StudentForm from "../views/Dashboard/StudentForm";
 
