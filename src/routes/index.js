@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 // import DashLayout from "../components/Dashboard/Layout"
-import View from "../views/Dashboard/DashLayout";
+
 // import AddStudent from "../components/AddStudent/AddStudent";
 import Signin from "../components/Forms/Signin";
 import AdminDashboard from "../views/Dashboard/AdminDashboard";
