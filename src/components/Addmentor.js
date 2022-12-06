@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react"
 import {useForm} from "react-hook-form";
 
@@ -7,8 +8,9 @@ function Addmentor() {
     
     const  { register,handleSubmit,formState: { errors }
       } = useForm();
-      const onSubmit = (data) => {
+      const onSubmit = async (data) => {
         console.log(JSON.stringify(data));
+        const response =await axios.post('http://localhost:1000/v1/attendance/user/mentors',data);
          };
   return (
 
