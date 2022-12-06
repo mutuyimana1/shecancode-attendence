@@ -1,4 +1,4 @@
-// import React from 'react'
+
 import React from 'react-dom'
 import '../Dashboard/admin.css'
 import {Link,Outlet } from 'react-router-dom'
