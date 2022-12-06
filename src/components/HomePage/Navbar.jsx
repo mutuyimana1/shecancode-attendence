@@ -8,14 +8,14 @@ function Navbar() {
 <div className="flex flex-wrap ">
   <section className="relative mx-auto drop-shadow-lg border-solid">
       
-    <nav className="flex justify-between bg-white w-screen">
+    <nav className="flex justify-between bg-white w-screen" style={{height:90}}>
       <div className="px-5 xl:px-5 py-6 flex w-full items-center">
-        <a className="text-3xl font-bold font-heading z-10" href="#">
+        <a className="text-xl font-bold font-heading" href="#">
           <img className="h-20" src="https://res.cloudinary.com/dggvxdkri/image/upload/v1665065641/samples/Attendance%20pict/logos1_v3xdrc.png" alt="logo"></img> 
         </a>
      
       
-        <ul className="hidden md:flex px-10 mx-auto pt-10 text-3xl font-semibold font-heading space-x-20">
+        <ul className="hidden md:flex px-10 mx-auto pt-10 text-xl font-semibold font-heading space-x-20">
           <li><Link className="text-gray-900 no-underline hover:text-gray-200" to="/">Home</Link></li>
           <li><Link className="text-gray-900 no-underline hover:text-gray-200" to="/signin">Sign In</Link></li>
           <li><Link className="text-gray-900 no-underline hover:text-gray-200" to="/">Contact Us</Link></li>

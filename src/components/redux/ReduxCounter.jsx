@@ -18,11 +18,11 @@ console.log( " myState " ,myState)
             <button onClick={()=>dispatch(decreaseValue ())} className="border-2 border-transparent bg-gray-800   shadow-lg ml-3 py-2 px-4 font-bold uppercase text-gray rounded transition-all hover:border-gray-800 hover:bg-transparent hover:text-blue-500">
             decrement
             </button>
-   <h1 className='pl-5'>
-   {myState}
+   <h1 className='pl-5'>   {myState}
    </h1>
 
             </div>
+            
     </div>
   )
 }
