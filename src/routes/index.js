@@ -13,6 +13,8 @@ import SuperAdmin from "../views/Dashboard/SuperAdmin";
 import Addmentor from "../components/Addmentor";
 import HomePage from "../components/HomePage/HomePage"
 
+import StudentForm from "../views/Dashboard/StudentForm";
+
 
 
 
@@ -22,24 +24,29 @@ const Index = () => {
   return (
     <>
    
-    <Routes>
-      <Route path= "/" element = {<HomePage/>} />
-      
-      {/* <Route path= "/Dashboard" element = {<View/>} /> */}
-      <Route path= "/signin" element = {<Signin/>} />
-      {/* <Route path="/addstudent" element={<AddStudent/>}/> */}
-      <Route path="/dashboard" element={<AdminDashboard/>}>
-      <Route path="" element={<Statistics />} />
-        <Route path="students" element={<SuperAdmin/>} />
-      <Route path ="counter" element={<ReduxCounter/>}/>
-      
-      <Route path="mentors" element={<Mentors/>}/>
-      <Route path="Addmentor" element={<Addmentor/>}/>
- 
-      </Route>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="home" element={<Home />} /> */}
+        {/* <Route path= "/Dashboard" element = {<View/>} /> */}
+        <Route path="/signin" element={<Signin />} />
+        {/* <Route path="/addstudent" element={<AddStudent/>}/> */}
+        <Route path="/dashboard" element={<AdminDashboard />}>
+          <Route path="" element={<Statistics />} />
+          <Route path="students" element={<SuperAdmin />} />
+          <Route path="counter" element={<ReduxCounter />} />
+          <Route path="mentors" element={<Mentors />} />
+          <Route path="StudentForm" element={<StudentForm />} />
+          <Route path="" element={<Statistics />} />
+          <Route path="Addmentor" element={<Addmentor/>}/>
+
+        </Route>
 
 
-    </Routes>
+      </Routes>
+
+    
+    
     
     </>
   )
