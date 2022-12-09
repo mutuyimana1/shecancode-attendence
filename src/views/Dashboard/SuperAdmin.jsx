@@ -1,8 +1,20 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import StudentForm from './StudentForm'
+import {useState,useEffect} from 'react'
+import axios from 'axios'
 
 const SuperAdmin = () => {
+    const [studentsDatas, setStudentsDatas] = useState([])
+const getStudentsData =async (data)=>{
+    const response = await axios.get("http://localhost:4040/v1/attendance/user/getAll",data)
+    console.log(response.data.data)
+    setStudentsDatas  (response.data.data);
+}
+useEffect(()=>{
+  getStudentsData();
+},[])
+    
     return (
         <div>
             
@@ -15,31 +27,37 @@ const SuperAdmin = () => {
                             
                             <th class="p-2 border-r cursor-pointer text-lg  text-white">
                                 <div class="flex items-center justify-center">
-                                Names
+                                firstName
+                                    
+                                </div>
+                            </th>
+
+                            <th class="p-2 border-r cursor-pointer text-lg  text-white">
+                                <div class="flex items-center justify-center">
+                                lastName
                                     
                                 </div>
                             </th>
                             <th class="p-2 border-r cursor-pointer text-lg  text-white">
                                 <div class="flex items-center justify-center">
-                                Emails
+                                Phone Number
                                     
                                 </div>
                             </th>
                             <th class="p-2 border-r cursor-pointer text-lg  text-white">
                                 <div class="flex items-center justify-center">
-                                    Phone Number
-                                    
+                                   Emails 
                                 </div>
                             </th>
                             <th class="p-2 border-r cursor-pointer text-lg  text-white">
                                 <div class="flex items-center justify-center">
-                                    cohort
+                                className
                                    
                                 </div>
                             </th>
                             <th class="p-2 border-r cursor-pointer text-lg  text-white">
                                 <div class="flex items-center justify-center">
-                                    Class
+                                Cohort
                                     
                                 </div>
                             </th>
@@ -53,27 +71,33 @@ const SuperAdmin = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        
-                        <tr>
+                        {
+                            studentsDatas?.map((studentsData)=>( <tr>
                            
-                            <td class="p-2 border-r  h-20">1. John Doe</td>
-                            <td class="p-2 border-r">john@gmail.com</td>
-                            <td class="p-2 border-r">0788888888</td>
-                            <td class="p-2 border-r">cohort 7</td>
-                            <td class="p-2 border-r">Bigsur</td>
-                            <td className='pl-5'>
-                            <button type="button" class="mr-3 text-sm bg-green-500 hover:bg-green-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Update</button>
-                            
-                                <button type="button" class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Delete</button>
-                            </td>
-                        </tr>
-                        <tr class="  bg-gray-100">
+                                <td class="p-2 border-r  h-20"> {studentsData?.firstName} </td>
+                                <td class="p-2 border-r  h-20"> {studentsData?.lastName}</td>
+                                <td class="p-2 border-r">{studentsData?.phone}</td>
+                                <td class="p-2 border-r">{studentsData?.email}</td>
+                                <td class="p-2 border-r">{studentsData?.class}</td>
+                                <td class="p-2 border-r">{studentsData?.cohort}</td>
+                                
+                                <td className='pl-5'>
+                                <button type="button" class="mr-3 text-sm bg-green-500 hover:bg-green-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Update</button>
+                                
+                                    <button type="button" class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Delete</button>
+                                </td>
+                            </tr>))
+                        }
+                       
+                        {/* <tr class="  bg-gray-100">
                            
-                            <td class="p-2 border-r h-20">2. Adam Smith</td>
-                            <td class="p-2 border-r">adam@gmail.com</td>
+                            <td class="p-2 border-r h-20"> Adam </td>
+                            <td class="p-2 border-r h-20">  Smith</td>
                             <td class="p-2 border-r">078888888</td>
-                            <td class="p-2 border-r">cohort 7</td>
+                            <td class="p-2 border-r">adam@gmail.com</td>
                             <td class="p-2 border-r">NetBrain</td>
+                            <td class="p-2 border-r">cohort 7</td>
+                            
                             <td className='pl-5'>
                                 <button type="button" class="mr-3 text-sm bg-green-500 hover:bg-green-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Update</button>
                             
@@ -82,11 +106,13 @@ const SuperAdmin = () => {
                         </tr>
                         <tr class=" ">
                             
-                            <td class="p-2 border-r h-20">3. Jean Doe</td>
-                            <td class="p-2 border-r">jean@gmail.com</td>
+                            <td class="p-2 border-r h-20"> Jean </td>
+                            <td class="p-2 border-r h-20"> Doe</td>
                             <td class="p-2 border-r">078888888</td>
-                            <td class="p-2 border-r">cohort 7</td>
+                            <td class="p-2 border-r">jean@gmail.com</td>
                             <td class="p-2 border-r">BigSur</td>
+                            <td class="p-2 border-r">cohort 7</td>
+                            
                             <td className='pl-5'>
                             <button type="button" class="mr-3 text-sm bg-green-500 hover:bg-green-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Update</button>
                             
@@ -95,11 +121,12 @@ const SuperAdmin = () => {
                         </tr>
                         <tr class="bg-gray-100  h-30">
                             
-                            <td class="p-2 border-r h-20">4. Jean Doe</td>
-                            <td class="p-2 border-r">jean@gmail.com</td>
+                            <td class="p-2 border-r h-20"> Jean </td>
+                            <td class="p-2 border-r h-20"> Doe</td>
                             <td class="p-2 border-r"> 0788888888</td>
-                            <td class="p-2 border-r">cohort 7</td>
+                            <td class="p-2 border-r">jean@gmail.com</td>
                             <td class="p-2 border-r">NetBrain</td>
+                            <td class="p-2 border-r">cohort 7</td>
                             <td className='pl-5'>
                             <button type="button" class="mr-3 text-sm bg-green-500 hover:bg-green-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Update</button>
                             
@@ -108,17 +135,19 @@ const SuperAdmin = () => {
                         </tr>
                         <tr >
                             
-                            <td class="p-2 border-r h-20">5. Jean Doe</td>
-                            <td class="p-2 border-r">jean@gmail.com</td>
+                            <td class="p-2 border-r h-20">Jean </td>
+                            <td class="p-2 border-r h-20"> Doe</td>
                             <td class="p-2 border-r">078888888</td>
+                            <td class="p-2 border-r">jean@gmail.com</td>
+                            <td class="p-2 border-r">BigSur</td>
                             <td class="p-2 border-r">cohort 7</td>
-                             <td class="p-2 border-r">BigSur</td>
+                            
                             <td className='pl-5'>
                             <button type="button" class="mr-3 text-sm bg-green-500 hover:bg-green-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Update</button>
                             
                                 <button type="button" class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Delete</button>
                             </td>
-                        </tr>
+                        </tr> */}
                     </tbody>
                 </table>
             </div>

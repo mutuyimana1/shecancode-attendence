@@ -19,6 +19,7 @@ function Navbar() {
           <li><Link className="text-gray-900 no-underline hover:text-gray-200" to="/">Home</Link></li>
           <li><Link className="text-gray-900 no-underline hover:text-gray-200" to="/signin">Sign In</Link></li>
           <li><Link className="text-gray-900 no-underline hover:text-gray-200" to="/">Contact Us</Link></li>
+          <li><Link className="text-gray-900 no-underline hover:text-gray-200" to="/about">About Us</Link></li>
         </ul>
         
         <div className="hidden xl:flex items-center space-x-5 items-center">

@@ -10,7 +10,7 @@ function Addmentor() {
       } = useForm();
       const onSubmit = async (data) => {
         console.log(JSON.stringify(data));
-        const response =await axios.post('http://localhost:1000/v1/attendance/user/mentors',data);
+        const response =await axios.post('http://localhost:4040/v1/attendance/user/mentors',data);
          };
   return (
 

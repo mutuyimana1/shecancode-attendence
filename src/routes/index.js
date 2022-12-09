@@ -18,6 +18,8 @@ import StudentStatus from "../components/StudentStatus";
 import TakeAttendance from "../components/TakeAttendance";
 import Permission from "../components/Permissions";
 import HomePage from "../components/HomePage/HomePage";
+import About from "../components/HomePage/About";
+
 
 
 
@@ -34,11 +36,14 @@ const Index = () => {
         {/* <Route path="home" element={<Home />} /> */}
         {/* <Route path= "/Dashboard" element = {<View/>} /> */}
         <Route path="/signin" element={<Signin />} />
+        <Route path="/about" element={<About />} />
+        
+
         {/* <Route path="/addstudent" element={<AddStudent/>}/> */}
         <Route path="/dashboard" element={<AdminDashboard />}>
           <Route path="" element={<Statistics />} />
           <Route path="students" element={<SuperAdmin />} />
-          <Route path="counter" element={<ReduxCounter />} />
+          {/* <Route path="counter" element={<ReduxCounter />} /> */}
           <Route path="mentors" element={<Mentors />} />
           <Route path="StudentForm" element={<StudentForm />} />
           <Route path="" element={<Statistics />} />
