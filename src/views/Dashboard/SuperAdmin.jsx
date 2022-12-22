@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import StudentForm from './StudentForm'
+// import StudentForm from './StudentForm'
 import {useState,useEffect} from 'react'
 import axios from 'axios'
 
